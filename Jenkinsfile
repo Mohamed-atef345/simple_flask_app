@@ -23,7 +23,6 @@ pipeline {
             agent {
                 docker {
                     image 'ubuntu:latest'  // Define the Docker image for the test stage
-                    label 'docker'         // Optional, if you need to specify a node with Docker installed
                 }
             }
             steps {
