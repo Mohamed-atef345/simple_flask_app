@@ -11,6 +11,7 @@ pipeline {
                   }
               } 
             }
+        }
         
         stage('package') {
             steps {
@@ -21,6 +22,7 @@ pipeline {
             steps {
                 sh 'echo testing......'
             }
+        }
         stage('deploy')
             { 
                 steps {
@@ -29,5 +31,5 @@ pipeline {
             }
         }
     }
-}
-}
+
+
