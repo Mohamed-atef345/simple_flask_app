@@ -6,7 +6,7 @@ pipeline {
             steps {
               script {
                     docker.withRegistry('https://index.docker.io/v1','dockerhub_credentials') {
-                    def testImage = docker.build("mohamedcloud/flaskapp_v:0.0.1") 
+                    def customImage = docker.build("mohamedcloud/flaskapp_v:0.0.1") 
                     customImage.push()
                   }
               } 
