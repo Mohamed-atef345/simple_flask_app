@@ -21,6 +21,10 @@ pipeline {
             steps {
                 sh 'echo testing......'
             }
+        stage('deploy')
+            {
+                sh 'docker run -d --name flask_app -p 8000:5000 mohamedcloud/flaskapp_v:0.0.1'
+            }
         }
     }
 }
