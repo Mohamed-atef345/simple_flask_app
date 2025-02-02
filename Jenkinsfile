@@ -11,7 +11,7 @@ pipeline {
                   }
               } 
             }
-        }
+        
         stage('package') {
             steps {
                 sh 'echo packaging....'
